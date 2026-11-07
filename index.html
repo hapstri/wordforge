@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Word Forge</title>
+<style>
+:root{--bg:#faf8f4;--fg:#1f1d1a;--mut:#6f6a61;--card:#fff;--line:#e4ded3;--pre:#2f6f5e;--suf:#b5562b;--acc:#f1e8d6;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17161a;--fg:#efece6;--mut:#a29d93;--card:#211f24;--line:#37343b;--pre:#6fcab0;--suf:#f0a27a;--acc:#2b2823}}
+:root[data-theme="dark"]{--bg:#17161a;--fg:#efece6;--mut:#a29d93;--card:#211f24;--line:#37343b;--pre:#6fcab0;--suf:#f0a27a;--acc:#2b2823}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;min-height:100vh}
+main{max-width:760px;margin:0 auto;padding:20px 16px 48px}
+h1{font:600 22px/1.2 Georgia,serif;margin:0 0 4px}
+.sub{color:var(--mut);margin:0 0 18px;font-size:14px}
+form{display:flex;gap:8px;margin-bottom:10px}
+input{flex:1;min-width:0;padding:11px 14px;font:inherit;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg)}
+button{font:inherit;padding:10px 16px;border-radius:10px;border:1px solid var(--line);background:var(--fg);color:var(--bg);cursor:pointer}
+button.g{background:transparent;color:var(--fg)}
+button:disabled{opacity:.4;cursor:default}
+#err{padding:10px 14px;border-radius:10px;background:var(--acc);font-size:14px;margin:8px 0 12px}
+#quick{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px;font-size:14px;align-items:center}
+#quick span{color:var(--mut)}
+#quick a{padding:2px 10px;border:1px solid var(--line);border-radius:99px;cursor:pointer;background:var(--card)}
+#drop{border:2px dashed var(--line);border-radius:16px;background:var(--card);padding:22px 16px;text-align:center;transition:border-color .15s,background .15s}
+#drop.over{border-color:var(--pre);background:var(--acc)}
+#word{font:600 clamp(34px,10vw,56px)/1.1 Georgia,serif;word-break:break-word}
+#parts{margin-top:8px;display:flex;gap:6px;justify-content:center;flex-wrap:wrap;font-size:14px}
+.tag{padding:2px 10px;border-radius:99px;border:1px solid var(--line)}
+.tag.pre{color:var(--pre);border-color:var(--pre)}
+.tag.suf{color:var(--suf);border-color:var(--suf)}
+.tag.root{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+#mean{margin-top:14px;text-align:left;border-top:1px solid var(--line);padding-top:12px}
+#mean .pos{color:var(--mut);font-style:italic;font-size:14px}
+#mean .vi{font-size:18px;margin:2px 0}
+#mean .note{margin-top:8px;font-size:14px;background:var(--acc);padding:8px 10px;border-radius:8px}
+#tools{display:flex;gap:8px;justify-content:center;margin-top:12px}
+h2{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--mut);margin:22px 0 8px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:520px){.cols{grid-template-columns:1fr}}
+.col h3{margin:0 0 8px;font-size:14px}
+.col.pre h3{color:var(--pre)}.col.suf h3{color:var(--suf)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{touch-action:none;user-select:none;-webkit-user-select:none;cursor:grab;padding:8px 12px;border-radius:12px;background:var(--card);border:1.5px solid var(--line);line-height:1.2}
+.chip b{font-size:17px}
+.chip small{display:block;color:var(--mut);font-size:12px;margin-top:2px}
+.pre .chip{border-color:var(--pre)}.pre .chip b{color:var(--pre)}
+.suf .chip{border-color:var(--suf)}.suf .chip b{color:var(--suf)}
+.chip.lifted{opacity:.35}
+.chip.ghost{position:fixed;z-index:50;pointer-events:none;transform:translate(-50%,-60%) rotate(-3deg);box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.empty{color:var(--mut);font-size:14px}
+</style>
+</head>
+<body>
+<main>
+  <h1>Word Forge</h1>
+  <p class="sub">Nhập một từ gốc, rồi kéo (hoặc chạm) prefix/suffix vào khung để tạo từ mới và xem nghĩa.</p>
+  <form id="f"><input id="q" list="dl" placeholder="vd: happy, create, use…" autocomplete="off" autocapitalize="none" spellcheck="false"><button id="go">Ghép</button></form>
+  <datalist id="dl"></datalist>
+  <div id="quick"></div>
+  <div id="err" hidden></div>
+  <section id="drop" hidden>
+    <div id="word"></div>
+    <div id="parts"></div>
+    <div id="mean"></div>
+    <div id="tools"><button class="g" id="undo">Hoàn tác</button><button class="g" id="reset">Từ khác</button></div>
+  </section>
+  <section id="pal" hidden>
+    <h2>Kéo vào khung trên</h2>
+    <div id="palbody"></div>
+  </section>
+</main>
+<script>
+const $ = s => document.querySelector(s);
+let DB = null, hist = [];
+
+fetch("data.json").then(r => r.json()).then(d => { DB = d; init(); })
+  .catch(() => showErr("Không tải được data.json. Nếu mở file trực tiếp từ máy, hãy chạy qua web server (vd: python -m http.server) hoặc dùng GitHub Pages."));
+
+function showErr(m) { const e = $("#err"); e.textContent = m; e.hidden = !m; }
+function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])); }
+
+function init() {
+  $("#dl").innerHTML = DB.roots.map(r => `<option value="${esc(r)}">`).join("");
+  const pick = DB.roots.slice().sort(() => Math.random() - .5).slice(0, 10);
+  $("#quick").innerHTML = "<span>Thử:</span>" + pick.map(r => `<a data-w="${esc(r)}">${esc(r)}</a>`).join("");
+  $("#quick").onclick = e => { const w = e.target.dataset && e.target.dataset.w; if (w) start(w); };
+}
+
+$("#f").addEventListener("submit", e => { e.preventDefault(); start($("#q").value); });
+
+function start(raw) {
+  if (!DB) return;
+  const w = String(raw).trim().toLowerCase();
+  $("#q").value = w;
+  const e = DB.words[w];
+  if (!w) return;
+  if (!e || !e.d) {
+    const sug = DB.roots.filter(r => r.startsWith(w.slice(0, 3))).slice(0, 8);
+    showErr(`“${w}” chưa có trong database.` + (sug.length ? " Gợi ý: " + sug.join(", ") : ""));
+    return;
+  }
+  showErr("");
+  hist = [{ word: w, kind: "root" }];
+  render();
+}
+
+$("#undo").onclick = () => { if (hist.length > 1) { hist.pop(); render(); } };
+$("#reset").onclick = () => { hist = []; $("#drop").hidden = true; $("#pal").hidden = true; $("#q").value = ""; $("#q").focus(); };
+
+const cur = () => hist[hist.length - 1];
+
+function concat(prev, aff) { return aff.endsWith("-") ? aff.slice(0, -1) + prev : prev + aff.slice(1); }
+
+function render() {
+  const c = cur(), e = DB.words[c.word];
+  $("#drop").hidden = false; $("#pal").hidden = false;
+  $("#word").textContent = c.word;
+  $("#undo").disabled = hist.length < 2;
+  const pres = [], sufs = [];
+  hist.slice(1).forEach(h => (h.kind === "p" ? pres : sufs).push(`<span class="tag ${h.kind === "p" ? "pre" : "suf"}">${esc(h.affix)}</span>`));
+  $("#parts").innerHTML = pres.reverse().join("") + `<span class="tag root">${esc(hist[0].word)}</span>` + sufs.join("");
+
+  let h = `<div class="pos">${esc(e.p)}</div><div class="vi">${esc(e.vi)}</div>`;
+  let note = "";
+  if (c.kind !== "root") {
+    const prev = hist[hist.length - 2].word, a = DB.affixes[c.affix];
+    note += `${esc(c.affix)} (${esc(a.vi)}) + ${esc(prev)} → ${esc(c.word)}`;
+    if (concat(prev, c.affix) !== c.word) note += `<br>Chính tả đổi: ${esc(prev)} ${c.kind === "p" ? "" : "+ "}${esc(c.affix)} thành ${esc(c.word)}`;
+  }
+  if (e.n) note += (note ? "<br>" : "") + esc(e.n);
+  if (note) h += `<div class="note">${note}</div>`;
+  $("#mean").innerHTML = h;
+
+  const entries = Object.entries(e.d || {});
+  const pre = entries.filter(([a]) => DB.affixes[a].t === "p"), suf = entries.filter(([a]) => DB.affixes[a].t === "s");
+  $("#palbody").innerHTML = entries.length
+    ? `<div class="cols"><div class="col pre"><h3>Prefix</h3><div class="chips" id="cp"></div></div><div class="col suf"><h3>Suffix</h3><div class="chips" id="cs"></div></div></div>`
+    : `<div class="empty">Từ này chưa có affix nào tiếp theo trong database.</div>`;
+  const fill = (id, arr) => {
+    const box = $(id); if (!box) return;
+    if (!arr.length) { box.innerHTML = '<span class="empty">—</span>'; return; }
+    arr.forEach(([a, res]) => {
+      const el = document.createElement("div");
+      el.className = "chip";
+      el.innerHTML = `<b>${esc(a)}</b><small>${esc(DB.affixes[a].vi)}</small>`;
+      bindDrag(el, a, res);
+      box.appendChild(el);
+    });
+  };
+  fill("#cp", pre); fill("#cs", suf);
+}
+
+function inDrop(ev) {
+  const r = $("#drop").getBoundingClientRect();
+  return ev.clientX >= r.left && ev.clientX <= r.right && ev.clientY >= r.top && ev.clientY <= r.bottom;
+}
+
+function bindDrag(el, aff, res) {
+  el.addEventListener("pointerdown", e => {
+    e.preventDefault();
+    const sx = e.clientX, sy = e.clientY;
+    let ghost = null, moved = false;
+    try { el.setPointerCapture(e.pointerId); } catch (_) {}
+    const clean = () => {
+      el.removeEventListener("pointermove", mv); el.removeEventListener("pointerup", up); el.removeEventListener("pointercancel", clean);
+      if (ghost) ghost.remove();
+      el.classList.remove("lifted"); $("#drop").classList.remove("over");
+    };
+    const mv = ev => {
+      if (!moved && Math.hypot(ev.clientX - sx, ev.clientY - sy) > 6) {
+        moved = true;
+        ghost = el.cloneNode(true); ghost.classList.add("ghost");
+        ghost.style.borderColor = DB.affixes[aff].t === "p" ? "var(--pre)" : "var(--suf)";
+        document.body.appendChild(ghost); el.classList.add("lifted");
+      }
+      if (ghost) {
+        ghost.style.left = ev.clientX + "px"; ghost.style.top = ev.clientY + "px";
+        $("#drop").classList.toggle("over", inDrop(ev));
+      }
+    };
+    const up = ev => {
+      const ok = !moved || inDrop(ev);
+      clean();
+      if (ok) { hist.push({ word: res, kind: DB.affixes[aff].t, affix: aff }); render(); }
+    };
+    el.addEventListener("pointermove", mv); el.addEventListener("pointerup", up); el.addEventListener("pointercancel", clean);
+  });
+}
+</script>
+</body>
+</html>

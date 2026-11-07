@@ -1,0 +1,794 @@
+# word|pos|vi|derivs|note
+# dòng bắt đầu bằng * là root. derivs: "kết_quả" (tự suy affix) hoặc "kết_quả=affix" (chỉ định khi bất quy tắc)
+*act|v/n|hành động; diễn xuất|action actor active
+action||hành động
+actor||diễn viên nam
+active||năng động, tích cực|activity inactive
+activity||hoạt động
+inactive||không hoạt động
+*add|v|thêm vào, cộng|addition
+addition||phép cộng; sự thêm vào|additional
+additional||bổ sung, thêm
+*agree|v|đồng ý|agreement disagree agreeable
+agreement||sự đồng ý, thỏa thuận|disagreement
+disagreement||sự bất đồng
+disagree||không đồng ý
+agreeable||dễ chịu; sẵn lòng đồng ý
+*appear|v|xuất hiện; có vẻ|appearance disappear reappear
+appearance||diện mạo; sự xuất hiện
+disappear||biến mất
+reappear||xuất hiện trở lại
+*appoint|v|bổ nhiệm; hẹn|appointment disappoint
+appointment||cuộc hẹn; sự bổ nhiệm
+disappoint||làm thất vọng|disappointed disappointing disappointment|Nghĩa hiện đại lệch khỏi "không + bổ nhiệm".
+disappointed||thất vọng
+disappointing||gây thất vọng
+disappointment||sự thất vọng
+*arrange|v|sắp xếp|arrangement
+arrangement||sự sắp xếp
+*attend|v|tham dự; chú ý|attendance attention=-ion
+attendance||sự tham dự; số người tham dự
+attention||sự chú ý
+*attract|v|thu hút|attraction attractive
+attraction||sự thu hút; điểm tham quan
+attractive||hấp dẫn|unattractive
+unattractive||kém hấp dẫn
+*achieve|v|đạt được|achievement achiever underachieve overachieve
+achievement||thành tựu
+achiever||người đạt thành tích cao
+underachieve||làm kém hơn khả năng
+overachieve||đạt kết quả vượt mong đợi
+*advertise|v|quảng cáo|advertisement advertiser
+advertisement||quảng cáo, tờ quảng cáo
+advertiser||nhà quảng cáo
+*amaze|v|làm kinh ngạc|amazement amazed amazing
+amazement||sự kinh ngạc
+amazed||kinh ngạc
+amazing||tuyệt vời, đáng kinh ngạc|amazingly
+amazingly||một cách đáng kinh ngạc
+*annoy|v|làm bực mình|annoyance annoyed annoying
+annoyance||sự bực mình
+annoyed||bực mình
+annoying||gây khó chịu
+*art|n|nghệ thuật|artist
+artist||nghệ sĩ|artistic
+artistic||có tính nghệ thuật
+*believe|v|tin|believer believable
+believer||người có đức tin
+believable||đáng tin|unbelievable
+unbelievable||không thể tin được
+*break|v|làm vỡ, phá|breakable
+breakable||dễ vỡ|unbreakable
+unbreakable||không thể vỡ
+*build|v|xây dựng|builder building rebuild
+builder||thợ xây
+building|n|tòa nhà
+rebuild||xây dựng lại
+*bore|v|làm chán|bored boring boredom
+bored||chán
+boring||nhàm chán
+boredom||sự buồn chán
+*care|n/v|sự chăm sóc; quan tâm|careful careless
+careful||cẩn thận|carefully
+carefully||một cách cẩn thận
+careless||bất cẩn|carelessly carelessness
+carelessly||một cách cẩu thả
+carelessness||sự bất cẩn
+*clean|adj/v|sạch; dọn dẹp|cleaner unclean
+cleaner||người/chất tẩy rửa
+unclean|adj|bẩn, không sạch
+*communicate|v|giao tiếp|communication communicative
+communication||sự giao tiếp
+communicative||cởi mở, giao tiếp tốt
+*compete|v|cạnh tranh|competition
+competition||cuộc thi; sự cạnh tranh
+*confuse|v|làm bối rối|confused confusing confusion
+confused||bối rối
+confusing||gây khó hiểu
+confusion||sự bối rối
+*connect|v|kết nối|connection disconnect
+connection||sự kết nối
+disconnect||ngắt kết nối
+*consider|v|cân nhắc|consideration considerable reconsider
+consideration||sự cân nhắc
+considerable||đáng kể
+reconsider||xem xét lại
+*continue|v|tiếp tục|continuous
+continuous||liên tục|continuously
+continuously||một cách liên tục
+*control|v/n|kiểm soát|controller
+controller||bộ điều khiển; người kiểm soát
+*cook|v|nấu ăn|cooker overcook
+cooker||bếp, nồi nấu
+overcook||nấu quá chín
+*cover|v|che phủ|uncover discover recover coverage
+uncover||mở ra, phát hiện
+discover||khám phá||Nghĩa lệch khỏi "không + che phủ".
+recover||hồi phục; lấy lại
+coverage||phạm vi bao phủ; sự đưa tin
+*create|v|tạo ra|creation creative creator
+creation||sự sáng tạo; tác phẩm
+creative||sáng tạo|creativity
+creativity||óc sáng tạo
+creator||người tạo ra
+*decide|v|quyết định|decision=-sion decisive=-ive
+decision||quyết định
+decisive||quyết đoán; mang tính quyết định
+*depend|v|phụ thuộc|dependent dependable
+dependent||phụ thuộc|independent
+independent||độc lập|independence=-ence independently
+independence||sự độc lập
+independently||một cách độc lập
+dependable||đáng tin cậy
+*describe|v|mô tả|description=-tion descriptive=-ive
+description||sự mô tả
+descriptive||mang tính mô tả
+*design|v/n|thiết kế|designer redesign
+designer||nhà thiết kế
+redesign||thiết kế lại
+*develop|v|phát triển|development developer
+development||sự phát triển
+developer||nhà phát triển; lập trình viên
+*differ|v|khác nhau|different difference
+different||khác biệt|differently
+differently||một cách khác
+difference||sự khác biệt
+*direct|adj/v|trực tiếp; chỉ đạo|direction director directly indirect
+direction||hướng; sự chỉ đạo
+director||giám đốc; đạo diễn
+directly||một cách trực tiếp
+indirect||gián tiếp|indirectly
+indirectly||một cách gián tiếp
+*educate|v|giáo dục|education educator educated
+education||nền giáo dục|educational
+educational||mang tính giáo dục
+educator||nhà giáo dục
+educated||có học thức|uneducated
+uneducated||thiếu học vấn
+*employ|v|thuê, tuyển dụng|employee employer employment employed
+employee||nhân viên
+employer||chủ thuê, nhà tuyển dụng
+employment||việc làm|unemployment
+unemployment||tình trạng thất nghiệp
+employed||có việc làm|unemployed
+unemployed||thất nghiệp
+*excite|v|làm phấn khích|excitement excited exciting
+excitement||sự phấn khích
+excited||hào hứng
+exciting||thú vị, gây phấn khích
+*experience|n/v|kinh nghiệm; trải qua|experienced
+experienced||có kinh nghiệm|inexperienced
+inexperienced||thiếu kinh nghiệm
+*explain|v|giải thích|explanation=-ation
+explanation||lời giải thích
+*fail|v|thất bại|failure
+failure||sự thất bại
+*fold|v|gấp|unfold folder
+unfold||mở ra, trải ra
+folder||thư mục; bìa kẹp hồ sơ
+*forget|v|quên|forgetful forgettable
+forgetful||hay quên
+forgettable||dễ bị quên|unforgettable
+unforgettable||khó quên
+*form|n/v|hình thức; hình thành|formal formation reform
+formal||trang trọng, chính thức|informal formally formality
+informal||thân mật, không trang trọng
+formally||một cách chính thức
+formality||thủ tục, tính nghi thức
+formation||sự hình thành
+reform||cải cách
+*govern|v|cai trị|government governor
+government||chính phủ
+governor||thống đốc
+*help|v/n|giúp đỡ|helper helpful helpless
+helper||người giúp việc
+helpful||hữu ích|unhelpful
+unhelpful||không giúp ích
+helpless||bất lực
+*imagine|v|tưởng tượng|imagination imaginative=-ive
+imagination||trí tưởng tượng
+imaginative||giàu trí tưởng tượng
+*improve|v|cải thiện|improvement
+improvement||sự cải thiện
+*inform|v|thông báo|information informed informative=-ive
+information||thông tin
+informed||am hiểu, có thông tin|uninformed
+uninformed||không được thông tin
+informative||nhiều thông tin
+*interest|n/v|sự quan tâm; làm quan tâm|interested interesting
+interested||quan tâm|uninterested
+uninterested||không quan tâm
+interesting||thú vị|uninteresting interestingly
+uninteresting||nhàm chán
+interestingly||thú vị là
+*invent|v|phát minh|invention inventor inventive
+invention||phát minh
+inventor||nhà phát minh
+inventive||sáng tạo
+*lead|v|dẫn dắt|leader
+leader||người lãnh đạo|leadership
+leadership||khả năng lãnh đạo
+*learn|v|học|learner relearn unlearn
+learner||người học
+relearn||học lại
+unlearn||bỏ kiến thức/thói quen cũ
+*like|v|thích|dislike likely
+dislike||không thích
+likely|adj|có khả năng|unlikely likelihood
+unlikely||không chắc xảy ra
+likelihood||khả năng xảy ra
+*load|n/v|tải; chất hàng|unload overload reload
+unload|v|dỡ hàng
+overload||quá tải
+reload||tải lại, nạp lại
+*lock|v/n|khóa|unlock locker
+unlock||mở khóa
+locker||tủ khóa
+*manage|v|quản lý; xoay xở|management manager manageable
+management||sự quản lý, ban quản lý
+manager||quản lý
+manageable||có thể xử lý được
+*measure|v|đo lường|measurement measurable
+measurement||sự đo lường
+measurable||đo được|immeasurable
+immeasurable||không thể đo lường
+*move|v|di chuyển|movement remove
+movement||sự di chuyển; phong trào
+remove||loại bỏ, gỡ bỏ
+*observe|v|quan sát|observation observer
+observation||sự quan sát
+observer||người quan sát
+*open|v/adj|mở|reopen openly opening
+reopen||mở lại
+openly||một cách công khai
+opening|n|lễ khai mạc; chỗ trống
+*operate|v|vận hành|operation operator
+operation||sự vận hành; ca phẫu thuật|operational
+operational||thuộc vận hành
+operator||người vận hành
+*organize|v|tổ chức|organization organizer organized reorganize
+organization||tổ chức
+organizer||người tổ chức
+organized||ngăn nắp, có tổ chức|disorganized
+disorganized||thiếu tổ chức
+reorganize||tổ chức lại
+*own|v/adj|sở hữu|owner
+owner||chủ sở hữu|ownership
+ownership||quyền sở hữu
+*pay|v|trả tiền|payment repay overpay underpay
+payment||khoản thanh toán
+repay||hoàn trả
+overpay||trả quá nhiều
+underpay||trả quá ít
+*perform|v|biểu diễn; thực hiện|performance performer
+performance||buổi biểu diễn; hiệu suất
+performer||người biểu diễn
+*play|v/n|chơi|player playful replay outplay
+player||người chơi
+playful||tinh nghịch
+replay||chơi lại; phát lại
+outplay||chơi hay hơn đối thủ
+*please|v|làm hài lòng|pleased pleasing pleasure
+pleased||hài lòng|displeased
+displeased||không hài lòng
+pleasing||dễ chịu
+pleasure||niềm vui
+*pollute|v|gây ô nhiễm|pollution polluted
+pollution||sự ô nhiễm
+polluted||bị ô nhiễm
+*prefer|v|thích hơn|preference
+preference||sự ưu tiên, sở thích
+*prepare|v|chuẩn bị|preparation prepared
+preparation||sự chuẩn bị
+prepared||sẵn sàng|unprepared
+unprepared||chưa chuẩn bị
+*produce|v|sản xuất|production=-ion producer productive=-ive reproduce
+production||sự sản xuất
+producer||nhà sản xuất
+productive||năng suất|unproductive productivity
+unproductive||không hiệu quả
+productivity||năng suất
+reproduce||tái tạo; sinh sản
+*protect|v|bảo vệ|protection protective protector
+protection||sự bảo vệ
+protective||mang tính bảo vệ
+protector||người bảo vệ
+*publish|v|xuất bản|publisher publication=-ation
+publisher||nhà xuất bản
+publication||ấn phẩm
+*react|v|phản ứng|reaction overreact
+reaction||phản ứng
+overreact||phản ứng thái quá
+*read|v|đọc|reader readable
+reader||độc giả
+readable||dễ đọc|unreadable
+unreadable||không đọc được
+*recycle|v|tái chế|recyclable
+recyclable||có thể tái chế
+*relate|v|liên quan|relation related relative
+relation||mối quan hệ|relationship
+relationship||quan hệ
+related||có liên quan|unrelated
+unrelated||không liên quan
+relative||họ hàng; tương đối
+*relax|v|thư giãn|relaxed relaxing relaxation
+relaxed||thoải mái
+relaxing||thư giãn
+relaxation||sự thư giãn
+*replace|v|thay thế|replacement replaceable
+replacement||sự thay thế
+replaceable||có thể thay thế|irreplaceable
+irreplaceable||không thể thay thế
+*respond|v|phản hồi|responsible=-ible
+responsible||chịu trách nhiệm|irresponsible responsibility=-ity
+irresponsible||thiếu trách nhiệm
+responsibility||trách nhiệm
+*satisfy|v|làm thỏa mãn|satisfaction=-ion satisfied
+satisfaction||sự hài lòng|dissatisfaction
+dissatisfaction||sự không hài lòng
+satisfied||hài lòng|dissatisfied
+dissatisfied||không hài lòng
+*shop|n/v|cửa hàng; mua sắm|shopper shopping
+shopper||người mua sắm
+shopping|n|việc mua sắm
+*suggest|v|đề xuất|suggestion
+suggestion||lời đề xuất
+*surprise|n/v|sự ngạc nhiên; làm ngạc nhiên|surprised surprising
+surprised||ngạc nhiên
+surprising||đáng ngạc nhiên|unsurprising surprisingly
+unsurprising||không có gì lạ
+surprisingly||một cách đáng ngạc nhiên
+*think|v|suy nghĩ|thinker rethink thinkable
+thinker||nhà tư tưởng
+rethink||suy nghĩ lại
+thinkable||có thể nghĩ tới|unthinkable
+unthinkable||không thể tưởng tượng
+*tire|v|làm mệt|tired tiring tireless
+tired||mệt
+tiring||gây mệt mỏi
+tireless||không biết mệt
+*train|v/n|huấn luyện; tàu hỏa|trainer trainee retrain
+trainer||huấn luyện viên
+trainee||học viên thực tập
+retrain||đào tạo lại
+*use|v|sử dụng|useful useless user reuse misuse overuse usable
+useful||hữu ích
+useless||vô dụng
+user||người dùng
+reuse||tái sử dụng
+misuse||dùng sai
+overuse||lạm dụng
+usable||dùng được|unusable
+unusable||không dùng được
+*visit|v|thăm|visitor revisit
+visitor||khách thăm
+revisit||thăm lại
+*work|v/n|làm việc; công việc|worker rework overwork
+worker||công nhân, người làm việc
+rework||làm lại
+overwork||làm việc quá sức
+*worry|v/n|lo lắng|worried worrying
+worried||lo lắng|unworried
+unworried||không lo lắng
+worrying||đáng lo
+*write|v|viết|writer rewrite
+writer||nhà văn
+rewrite||viết lại
+*paint|v/n|sơn; vẽ tranh|painter painting repaint
+painter||họa sĩ; thợ sơn
+painting|n|bức tranh
+repaint||sơn lại
+*run|v|chạy|runner outrun rerun
+runner||vận động viên chạy
+outrun||chạy nhanh hơn
+rerun||chiếu lại, chạy lại
+*frighten|v|làm sợ|frightened frightening
+frightened||sợ hãi
+frightening||đáng sợ
+*correct|adj/v|đúng; sửa|correction correctly incorrect
+correction||sự sửa chữa
+correctly||một cách chính xác
+incorrect||không đúng|incorrectly
+incorrectly||một cách sai
+*close|v/adj|đóng; gần|closely closure
+closely||một cách sát sao
+closure||sự đóng cửa
+*complete|adj/v|hoàn chỉnh; hoàn thành|completion completely incomplete
+completion||sự hoàn thành
+completely||hoàn toàn
+incomplete||chưa hoàn chỉnh
+*able|adj|có khả năng|ability=-ity unable disable
+ability||khả năng|disability inability
+disability||khuyết tật
+inability||sự bất lực
+unable||không thể
+disable|v|vô hiệu hóa; làm mất khả năng
+*accurate|adj|chính xác|inaccurate accurately
+inaccurate||không chính xác
+accurately||một cách chính xác
+*appropriate|adj|phù hợp|inappropriate appropriately
+inappropriate||không phù hợp
+appropriately||một cách phù hợp
+*capable|adj|có năng lực|incapable capability=-ity
+incapable||không có khả năng
+capability||năng lực
+*certain|adj|chắc chắn|certainty certainly uncertain
+certainty||sự chắc chắn
+certainly||chắc chắn rồi
+uncertain||không chắc chắn|uncertainty
+uncertainty||sự bất định
+*clear|adj/v|rõ ràng; dọn|clearly unclear
+clearly||một cách rõ ràng
+unclear||không rõ ràng
+*comfort|n/v|sự thoải mái; an ủi|comfortable comforting
+comfortable||thoải mái|uncomfortable comfortably
+uncomfortable||khó chịu, không thoải mái
+comfortably||một cách thoải mái
+comforting||an ủi
+*conscious|adj|có ý thức|unconscious consciously consciousness
+unconscious||bất tỉnh; vô thức
+consciously||một cách có ý thức
+consciousness||ý thức
+*convenient|adj|tiện lợi|inconvenient conveniently convenience=-ence
+inconvenient||bất tiện
+conveniently||một cách tiện lợi
+convenience||sự tiện lợi|inconvenience
+inconvenience||sự bất tiện
+*convince|v|thuyết phục|convincing convinced
+convincing||có sức thuyết phục|unconvincing
+unconvincing||thiếu thuyết phục
+convinced||tin chắc
+*courage|n|lòng can đảm|courageous encourage discourage
+courageous||dũng cảm
+encourage||khuyến khích|encouraged encouraging encouragement
+encouraged||được khích lệ
+encouraging||đầy khích lệ
+encouragement||sự khích lệ
+discourage|v|làm nản lòng|discouraged discouraging discouragement
+discouraged||nản lòng
+discouraging||gây nản lòng
+discouragement||sự nản lòng
+*count|v|đếm|countable countless
+countable||đếm được|uncountable
+uncountable||không đếm được
+countless||vô số
+*danger|n|nguy hiểm|dangerous
+dangerous||nguy hiểm|dangerously
+dangerously||một cách nguy hiểm
+*easy|adj|dễ|easily uneasy
+easily||một cách dễ dàng
+uneasy||bất an
+*effect|n|tác động|effective
+effective||hiệu quả|effectively ineffective effectiveness
+effectively||một cách hiệu quả
+ineffective||không hiệu quả
+effectiveness||tính hiệu quả
+*efficient|adj|hiệu quả (tiết kiệm)|inefficient efficiently
+inefficient||kém hiệu quả
+efficiently||một cách hiệu quả
+*fair|adj|công bằng|unfair fairness fairly
+unfair||không công bằng|unfairly unfairness
+unfairly||một cách bất công
+unfairness||sự bất công
+fairness||sự công bằng
+fairly||khá; một cách công bằng
+*familiar|adj|quen thuộc|unfamiliar familiarity
+unfamiliar||lạ, không quen
+familiarity||sự quen thuộc
+*fashion|n|thời trang|fashionable
+fashionable||hợp thời trang|unfashionable
+unfashionable||lỗi thời
+*fit|adj/v|vừa; khỏe mạnh|fitness unfit
+fitness||thể lực
+unfit|adj|không đủ sức khỏe; không phù hợp
+*free|adj|tự do; miễn phí|freedom freely
+freedom||sự tự do
+freely||một cách tự do
+*friend|n|bạn bè|friendly friendship
+friendly|adj|thân thiện|unfriendly friendliness
+unfriendly||không thân thiện
+friendliness||sự thân thiện
+friendship||tình bạn
+*happy|adj|hạnh phúc|unhappy happiness happily
+unhappy||không vui|unhappiness unhappily
+unhappiness||nỗi buồn
+unhappily||một cách buồn bã
+happiness||niềm hạnh phúc
+happily||một cách vui vẻ
+*health|n|sức khỏe|healthy
+healthy||khỏe mạnh|unhealthy
+unhealthy||không lành mạnh
+*honest|adj|trung thực|honesty dishonest honestly
+honesty|n|sự trung thực|dishonesty
+dishonesty||sự không trung thực
+dishonest||không trung thực
+honestly||thành thật mà nói
+*hope|n/v|hy vọng|hopeful hopeless
+hopeful||đầy hy vọng|hopefully
+hopefully||hy vọng rằng
+hopeless||vô vọng|hopelessly
+hopelessly||một cách tuyệt vọng
+*important|adj|quan trọng|unimportant importance=-ance importantly
+unimportant||không quan trọng
+importance||tầm quan trọng
+importantly||quan trọng là
+*kind|adj/n|tốt bụng; loại|kindness unkind kindly
+kindness||lòng tốt
+unkind|adj|không tử tế
+kindly|adv|một cách tử tế
+*legal|adj|hợp pháp|illegal legally
+illegal||bất hợp pháp|illegally
+illegally||một cách bất hợp pháp
+legally||về mặt pháp lý
+*logic|n|logic|logical
+logical||hợp logic|illogical logically
+illogical||phi logic
+logically||một cách logic
+*luck|n|may mắn|lucky
+lucky||may mắn|unlucky luckily
+unlucky||xui xẻo
+luckily||may mắn là
+*nature|n|thiên nhiên; bản chất|natural
+natural||tự nhiên|unnatural naturally
+unnatural||không tự nhiên
+naturally||một cách tự nhiên; tất nhiên
+*necessary|adj|cần thiết|unnecessary necessarily
+unnecessary||không cần thiết
+necessarily||nhất thiết
+*patient|adj/n|kiên nhẫn; bệnh nhân|impatient patience=-ence patiently
+impatient|adj|thiếu kiên nhẫn|impatiently
+impatiently||một cách sốt ruột
+patience||sự kiên nhẫn|impatience
+impatience||sự thiếu kiên nhẫn
+patiently||một cách kiên nhẫn
+*perfect|adj|hoàn hảo|perfection perfectly imperfect
+perfection||sự hoàn hảo|imperfection
+imperfection||khuyết điểm
+perfectly||một cách hoàn hảo
+imperfect||chưa hoàn hảo
+*person|n|con người|personal
+personal||cá nhân|personality personally impersonal
+personality||tính cách
+personally||về cá nhân
+impersonal||thiếu tình người
+*polite|adj|lịch sự|politely impolite politeness
+politely||một cách lịch sự
+impolite||bất lịch sự
+politeness||sự lịch sự
+*popular|adj|phổ biến|unpopular popularity
+unpopular||không được ưa chuộng
+popularity||sự phổ biến
+*possible|adj|có thể|impossible possibly possibility=-ity
+impossible||không thể
+possibly||có thể
+possibility||khả năng
+*practice|n/v|thực hành|practical
+practical||thực tế|practically impractical
+practically||trên thực tế
+impractical||không thực tế
+*proper|adj|đúng đắn|improper properly
+improper||không đúng đắn
+properly||một cách đúng đắn
+*real|adj|thật|unreal really reality realize
+unreal||không thật
+really||thực sự
+reality||thực tế
+realize||nhận ra|realization
+realization||sự nhận ra
+*regular|adj|đều đặn|irregular regularly
+irregular||bất thường
+regularly||một cách thường xuyên
+*safe|adj|an toàn|safety safely unsafe
+safety||sự an toàn
+safely||một cách an toàn
+unsafe||không an toàn
+*sad|adj|buồn|sadness sadly
+sadness||nỗi buồn
+sadly||buồn thay
+*secure|adj|an toàn, vững chắc|insecure security securely
+insecure||bất an|insecurity
+insecurity||sự bất an
+security||an ninh
+securely||một cách chắc chắn
+*sense|n|giác quan; ý thức|sensible sensitive=-ive senseless nonsense
+sensible||hợp lý, biết điều
+sensitive||nhạy cảm|insensitive
+insensitive||vô cảm
+senseless||vô nghĩa
+nonsense||điều vô nghĩa
+*serious|adj|nghiêm túc|seriously seriousness
+seriously||một cách nghiêm túc
+seriousness||sự nghiêm trọng
+*simple|adj|đơn giản|simply simplify
+simply||đơn giản là
+simplify||đơn giản hóa
+*skill|n|kỹ năng|skilled skillful
+skilled||có tay nghề|unskilled
+unskilled||không có tay nghề
+skillful||khéo léo
+*social|adj|thuộc xã hội|socially antisocial socialize
+socially||về mặt xã hội
+antisocial||chống đối xã hội; ngại giao du
+socialize||giao lưu
+*special|adj|đặc biệt|specially specialist specialize
+specially||một cách đặc biệt
+specialist||chuyên gia
+specialize||chuyên về|specialization
+specialization||sự chuyên môn hóa
+*strong|adj|mạnh|strength=-th strongly
+strength||sức mạnh|strengthen
+strengthen||củng cố
+strongly||mạnh mẽ
+*success|n|thành công|successful
+successful||thành công|unsuccessful successfully
+unsuccessful||không thành công|unsuccessfully
+unsuccessfully||một cách không thành công
+successfully||một cách thành công
+*suit|n/v|bộ vest; phù hợp|suitable
+suitable||phù hợp|unsuitable
+unsuitable||không phù hợp
+*true|adj|đúng|untrue truly truth
+untrue||sai sự thật
+truly||thực sự
+truth||sự thật|truthful
+truthful||trung thực
+*usual|adj|thông thường|unusual usually
+unusual||bất thường|unusually
+unusually||một cách khác thường
+usually||thường thường
+*wise|adj|khôn ngoan|wisdom unwise wisely
+wisdom||sự thông thái
+unwise||thiếu khôn ngoan
+wisely||một cách khôn ngoan
+*fresh|adj|tươi, mới|freshen freshness freshly
+freshen||làm tươi mới
+freshness||sự tươi mới
+freshly||vừa mới
+*soft|adj|mềm|soften softness softly
+soften||làm mềm đi
+softness||sự mềm mại
+softly||nhẹ nhàng
+*weak|adj|yếu|weaken weakness weakly
+weaken||làm yếu đi
+weakness||điểm yếu
+weakly||yếu ớt
+*wide|adj|rộng|widen width widely
+widen||mở rộng
+width||chiều rộng
+widely||rộng rãi
+*deep|adj|sâu|deepen depth=-th deeply
+deepen||làm sâu thêm
+depth||độ sâu
+deeply||sâu sắc
+*short|adj|ngắn; thấp|shorten shortage shortly
+shorten||rút ngắn
+shortage||sự thiếu hụt
+shortly||ngay sau đó
+*thick|adj|dày|thicken thickness
+thicken||làm dày/đặc
+thickness||độ dày
+*bright|adj|sáng|brighten brightness brightly
+brighten||làm sáng lên
+brightness||độ sáng
+brightly||một cách sáng sủa
+*dark|adj|tối|darken darkness
+darken||làm tối đi
+darkness||bóng tối
+*loose|adj|lỏng|loosen loosely
+loosen||nới lỏng
+loosely||một cách lỏng lẻo
+*tight|adj|chặt|tighten tightly
+tighten||siết chặt
+tightly||một cách chặt chẽ
+*sharp|adj|sắc|sharpen sharpness sharply
+sharpen||mài sắc
+sharpness||độ sắc
+sharply||một cách sắc nét
+*nation|n|quốc gia|national
+national||thuộc quốc gia|nationality international
+nationality||quốc tịch
+international||quốc tế
+*culture|n|văn hóa|cultural
+cultural||thuộc văn hóa
+*tradition|n|truyền thống|traditional
+traditional||truyền thống|traditionally
+traditionally||theo truyền thống
+*environment|n|môi trường|environmental
+environmental||thuộc môi trường|environmentalist environmentally
+environmentalist||nhà bảo vệ môi trường
+environmentally||về mặt môi trường
+*child|n|đứa trẻ|childhood childish childless
+childhood||thời thơ ấu
+childish||trẻ con
+childless||không có con
+*neighbour|n|hàng xóm|neighbourhood
+neighbourhood||khu phố
+*parent|n|cha mẹ|parenthood parental
+parenthood||cương vị làm cha mẹ
+parental||thuộc cha mẹ
+*member|n|thành viên|membership
+membership||tư cách thành viên
+*economy|n|nền kinh tế|economic economist
+economic||thuộc kinh tế
+economist||nhà kinh tế học
+*industry|n|ngành công nghiệp|industrial
+industrial||thuộc công nghiệp
+*human|adj/n|con người|humanity
+humanity||nhân loại
+*reason|n|lý do|reasonable
+reasonable||hợp lý|unreasonable reasonably
+unreasonable||vô lý
+reasonably||một cách hợp lý
+*value|n/v|giá trị|valuable undervalue
+valuable||quý giá|invaluable
+invaluable||vô giá
+undervalue|v|đánh giá thấp
+*fear|n/v|nỗi sợ|fearful fearless
+fearful||sợ hãi
+fearless||không sợ hãi
+*pain|n|nỗi đau|painful painless
+painful||đau đớn|painfully
+painfully||một cách đau đớn
+painless||không đau
+*power|n|sức mạnh; quyền lực|powerful powerless overpower
+powerful||mạnh mẽ
+powerless||bất lực
+overpower|v|áp đảo
+*peace|n|hòa bình|peaceful
+peaceful||yên bình|peacefully
+peacefully||một cách yên bình
+*beauty|n|vẻ đẹp|beautiful
+beautiful||xinh đẹp|beautifully
+beautifully||một cách tuyệt đẹp
+*color|n|màu sắc|colorful colorless
+colorful||nhiều màu sắc
+colorless||không màu
+*cloud|n|đám mây|cloudy cloudless
+cloudy||nhiều mây
+cloudless||không mây
+*taste|n/v|vị; nếm|tasty tasteless
+tasty||ngon
+tasteless||vô vị
+*visible|adj|nhìn thấy được|invisible
+invisible||vô hình
+*price|n|giá|priceless
+priceless||vô giá
+*teach|v|dạy|teacher
+teacher||giáo viên
+*stable|adj|ổn định|unstable stability=-ity
+unstable||không ổn định
+stability||sự ổn định
+*equal|adj|bằng nhau|unequal equality equally
+unequal||không bằng nhau
+equality||sự bình đẳng
+equally||một cách bằng nhau
+*grateful|adj|biết ơn|ungrateful gratefully
+ungrateful||vô ơn
+gratefully||một cách biết ơn
+*lonely|adj|cô đơn|loneliness
+loneliness||sự cô đơn
+*busy|adj|bận|busily business
+busily||một cách bận rộn
+business||việc kinh doanh; công việc||Nghĩa đã chuyển khỏi "tình trạng bận rộn".
+*lazy|adj|lười|laziness lazily
+laziness||sự lười biếng
+lazily||một cách lười biếng
+*angry|adj|tức giận|angrily
+angrily||một cách giận dữ
+*fortunate|adj|may mắn|unfortunate fortunately
+unfortunate||không may|unfortunately
+unfortunately||không may là
+fortunately||may mắn là
+*aware|adj|nhận thức|unaware awareness
+unaware||không hay biết
+awareness||sự nhận thức
+*willing|adj|sẵn lòng|unwilling willingly willingness
+unwilling||không sẵn lòng
+willingly||một cách sẵn lòng
+willingness||sự sẵn lòng
+*mature|adj|trưởng thành|immature maturity
+immature||chưa trưởng thành
+maturity||sự trưởng thành
+*flexible|adj|linh hoạt|inflexible flexibility=-ity
+inflexible||cứng nhắc
+flexibility||sự linh hoạt
