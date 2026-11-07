@@ -131,6 +131,18 @@ orph = [w for w in W if w not in roots and w not in parent]
 used = {a for v in W.values() for a in v.get("d", {})}
 for o in orph: errs.append(f"mồ côi (không root nào dẫn tới): {o}")
 
+
+# lint: kết quả gắn ở base nhưng cũng ghép được từ "anh em" (dẫn xuất khác của cùng base)
+warns = []
+for b, v in W.items():
+    d = v.get("d", {})
+    for res in d.values():
+        for sib in d.values():
+            if sib == res or sib not in W or res in W[sib].get("d", {}).values(): continue
+            ex = [a for a, (t, *_r) in AFF.items() if (a[:-1] + sib == res if t == "p" else sib + a[1:] == res)]
+            if ex:
+                warns.append(f"  {b}: '{res}' = '{sib}' {ex[0]} -> thêm '{res}' vào dòng của '{sib}' (hoặc chỉ giữ ở '{sib}')")
+
 if errs:
     print("\n".join(errs)); print(f"\n{len(errs)} lỗi"); sys.exit(1)
 
@@ -139,4 +151,6 @@ out = {"affixes": {a: {"t": AFF[a][0], "vi": AFF[a][2], "en": AFF[a][3]} for a i
 json.dump(out, open(dst, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
 nd = sum(len(v.get("d", {})) for v in W.values())
 print(f"OK: {len(roots)} root, {len(W)} từ, {nd} phép ghép, {len(used)} affix")
+if warns: print(f"CẢNH BÁO ({len(warns)}): ghép bị cụt đường")
+print("\n".join(warns))
 print("affix không dùng:", sorted(set(AFF) - used))
